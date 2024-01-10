@@ -57,10 +57,10 @@ RM = /usr/bin/cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/_ECU1/repo_projects/pEcuReSim/cR_LATEST
+CMAKE_SOURCE_DIR = /home/nhuliyap/Workspace_Windows_1/repo_projects/ProjectWindows_EcuResim_vBcRsBpTpms/cR_LATEST
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/_ECU1/repo_projects/pEcuReSim/cR_LATEST/build
+CMAKE_BINARY_DIR = /home/nhuliyap/Workspace_Windows_1/repo_projects/ProjectWindows_EcuResim_vBcRsBpTpms/cR_LATEST/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/_ECU1/repo_projects/pEcuReSim/cR_LATEST/build/CMakeFiles /cygdrive/c/_ECU1/repo_projects/pEcuReSim/cR_LATEST/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nhuliyap/Workspace_Windows_1/repo_projects/ProjectWindows_EcuResim_vBcRsBpTpms/cR_LATEST/build/CMakeFiles /home/nhuliyap/Workspace_Windows_1/repo_projects/ProjectWindows_EcuResim_vBcRsBpTpms/cR_LATEST/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/_ECU1/repo_projects/pEcuReSim/cR_LATEST/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nhuliyap/Workspace_Windows_1/repo_projects/ProjectWindows_EcuResim_vBcRsBpTpms/cR_LATEST/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -177,30 +177,6 @@ source/SwcServiceStartUp/SwcServiceStartUp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pEcuReSim_LATEST.dir/build.make CMakeFiles/pEcuReSim_LATEST.dir/source/SwcServiceStartUp/SwcServiceStartUp.c.s
 .PHONY : source/SwcServiceStartUp/SwcServiceStartUp.c.s
 
-source/wrappers/wrappers.o: source/wrappers/wrappers.c.o
-.PHONY : source/wrappers/wrappers.o
-
-# target to build an object file
-source/wrappers/wrappers.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pEcuReSim_LATEST.dir/build.make CMakeFiles/pEcuReSim_LATEST.dir/source/wrappers/wrappers.c.o
-.PHONY : source/wrappers/wrappers.c.o
-
-source/wrappers/wrappers.i: source/wrappers/wrappers.c.i
-.PHONY : source/wrappers/wrappers.i
-
-# target to preprocess a source file
-source/wrappers/wrappers.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pEcuReSim_LATEST.dir/build.make CMakeFiles/pEcuReSim_LATEST.dir/source/wrappers/wrappers.c.i
-.PHONY : source/wrappers/wrappers.c.i
-
-source/wrappers/wrappers.s: source/wrappers/wrappers.c.s
-.PHONY : source/wrappers/wrappers.s
-
-# target to generate assembly for a file
-source/wrappers/wrappers.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pEcuReSim_LATEST.dir/build.make CMakeFiles/pEcuReSim_LATEST.dir/source/wrappers/wrappers.c.s
-.PHONY : source/wrappers/wrappers.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -216,9 +192,6 @@ help:
 	@echo "... source/SwcServiceStartUp/SwcServiceStartUp.o"
 	@echo "... source/SwcServiceStartUp/SwcServiceStartUp.i"
 	@echo "... source/SwcServiceStartUp/SwcServiceStartUp.s"
-	@echo "... source/wrappers/wrappers.o"
-	@echo "... source/wrappers/wrappers.i"
-	@echo "... source/wrappers/wrappers.s"
 .PHONY : help
 
 

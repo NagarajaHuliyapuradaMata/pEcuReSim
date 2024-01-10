@@ -19,6 +19,7 @@ add_definitions(
    -D NOT_READY_FOR_TESTING_OR_DEPLOYMENT
    -D IBTCM_SW_ANPASSUNGEN
    -D BUILD_RIVIAN
+   -D _EcuVirtual
 )
 
 add_executable(
@@ -26,7 +27,7 @@ add_executable(
 
    ${PROJECT_SOURCE_DIR}/source/SwcServiceStartUp/SwcServiceStartUp.c
    ${PROJECT_SOURCE_DIR}/source/McalGpt/McalGpt.c
-   ${PROJECT_SOURCE_DIR}/source/wrappers/wrappers.c
+#   ${PROJECT_SOURCE_DIR}/source/wrappers/wrappers.c
 
 ##   ${PROJECT_SOURCE_DIR}/source/McalAdc/adc.c
 ##   ${PROJECT_SOURCE_DIR}/source/wrappers/FBL_APPL/applvect.c
@@ -486,7 +487,7 @@ target_include_directories(
 
    "${PROJECT_SOURCE_DIR}/source/common"
    "${PROJECT_SOURCE_DIR}/source/ProjectCfg"
-   "${PROJECT_SOURCE_DIR}/source/ProjectCompiler"
+   "${PROJECT_SOURCE_DIR}/source/ProjectMemMap"
    "${PROJECT_SOURCE_DIR}/source/ProjectARA"
    "${PROJECT_SOURCE_DIR}/source/SwcApplDcm"
    "${PROJECT_SOURCE_DIR}/source/SwcApplDem"
@@ -512,6 +513,7 @@ target_include_directories(
    "${PROJECT_SOURCE_DIR}/source/EcuabCanTrcv"
    "${PROJECT_SOURCE_DIR}/source/EcuabFee"
    "${PROJECT_SOURCE_DIR}/source/EcuabMemIf"
+   "${PROJECT_SOURCE_DIR}/source/LibAutosar"
    "${PROJECT_SOURCE_DIR}/source/McalAdc"
    "${PROJECT_SOURCE_DIR}/source/McalCan"
    "${PROJECT_SOURCE_DIR}/source/McalDio"

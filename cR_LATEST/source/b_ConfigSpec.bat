@@ -1,110 +1,113 @@
 DEL common
-MKLINK /D common            ..\..\..\..\repo_submodules\common\pRealEcu_LATEST
-
-DEL EcuabCanIf
-MKLINK /D EcuabCanIf        ..\..\..\..\repo_submodules\EcuabCanIf\pRealEcu_LATEST
-
-DEL EcuabCanTrcv
-MKLINK /D EcuabCanTrcv      ..\..\..\..\repo_submodules\EcuabCanTrcv\pRealEcu_LATEST
+MKLINK /D common            ..\..\..\..\repo_submodules\common\EcuReal_vBcRsBpTpms_LATEST
 
 DEL EcuabFee
-MKLINK /D EcuabFee          ..\..\..\..\repo_submodules\EcuabFee\pRealEcu_LATEST
+MKLINK /D EcuabFee          ..\..\..\..\repo_submodules\EcuabFee\EcuReal_vBcRsBpTpms_LATEST
 
-DEL EcuabMemIf
-MKLINK /D EcuabMemIf        ..\..\..\..\repo_submodules\EcuabMemIf\pRealEcu_LATEST
+DEL EcuabIfCan
+MKLINK /D EcuabIfCan        ..\..\..\..\repo_submodules\EcuabIfCan\EcuReal_vBcRsBpTpms_LATEST
+
+DEL EcuabIfMem
+MKLINK /D EcuabIfMem        ..\..\..\..\repo_submodules\EcuabIfMem\EcuReal_vBcRsBpTpms_LATEST
+
+DEL EcuabTrcvCan
+MKLINK /D EcuabTrcvCan      ..\..\..\..\repo_submodules\EcuabTrcvCan\EcuReal_vBcRsBpTpms_LATEST
+
+DEL LibAutosar
+MKLINK /D LibAutosar        ..\..\..\..\repo_submodules\LibAutosar\EcuReal_vBcRsBpTpms_LATEST
 
 DEL McalAdc
-MKLINK /D McalAdc           ..\..\..\..\repo_submodules\McalAdc\pRealEcu_LATEST
+MKLINK /D McalAdc           ..\..\..\..\repo_submodules\McalAdc\EcuReal_vBcRsBpTpms_LATEST
 
 DEL McalCan
-MKLINK /D McalCan           ..\..\..\..\repo_submodules\McalCan\pRealEcu_LATEST
+MKLINK /D McalCan           ..\..\..\..\repo_submodules\McalCan\EcuReal_vBcRsBpTpms_LATEST
 
 DEL McalDio
-MKLINK /D McalDio           ..\..\..\..\repo_submodules\McalDio\pRealEcu_LATEST
+MKLINK /D McalDio           ..\..\..\..\repo_submodules\McalDio\EcuReal_vBcRsBpTpms_LATEST
 
 DEL McalFls
-MKLINK /D McalFls           ..\..\..\..\repo_submodules\McalFls\pRealEcu_LATEST
+MKLINK /D McalFls           ..\..\..\..\repo_submodules\McalFls\EcuReal_vBcRsBpTpms_LATEST
 
 DEL McalGpt
-MKLINK /D McalGpt           ..\..\..\..\repo_submodules\McalGpt\pRealEcu_LATEST
+MKLINK /D McalGpt           ..\..\..\..\repo_submodules\McalGpt\EcuReal_vBcRsBpTpms_LATEST
 
 DEL McalLin
-MKLINK /D McalLin           ..\..\..\..\repo_submodules\McalLin\pRealEcu_LATEST
+MKLINK /D McalLin           ..\..\..\..\repo_submodules\McalLin\EcuReal_vBcRsBpTpms_LATEST
 
 DEL McalMcu
-MKLINK /D McalMcu           ..\..\..\..\repo_submodules\McalMcu\pRealEcu_LATEST
+MKLINK /D McalMcu           ..\..\..\..\repo_submodules\McalMcu\EcuReal_vBcRsBpTpms_LATEST
 
 DEL McalWdg
-MKLINK /D McalWdg           ..\..\..\..\repo_submodules\McalWdg\pRealEcu_LATEST
+MKLINK /D McalWdg           ..\..\..\..\repo_submodules\McalWdg\EcuReal_vBcRsBpTpms_LATEST
 
 DEL ProjectARA
-MKLINK /D ProjectARA        ..\..\..\pRealEcu\cR_LATEST\source\ProjectARA
+MKLINK /D ProjectARA        ..\..\..\..\repo_submodules\ProjectARA\EcuReal_vBcRsBpTpms_LATEST
 
 DEL ProjectCfg
-MKLINK /D ProjectCfg        ..\..\..\pRealEcu\cR_LATEST\source\ProjectCfg
+MKLINK /D ProjectCfg        ..\..\..\..\repo_submodules\ProjectCfg\EcuReal_vBcRsBpTpms_LATEST
 
-DEL ProjectCompiler
-MKLINK /D ProjectCompiler   ..\..\..\pRealEcu\cR_LATEST\source\ProjectCompiler
+DEL ProjectMemMap
+MKLINK /D ProjectMemMap     ..\..\..\..\repo_submodules\ProjectMemMap\EcuReal_vBcRsBpTpms_LATEST
 
 DEL SwcApplDcm
-MKLINK /D SwcApplDcm        ..\..\..\..\repo_submodules\SwcApplDcm\pRealEcu_LATEST
+MKLINK /D SwcApplDcm        ..\..\..\..\repo_submodules\SwcApplDcm\EcuReal_vBcRsBpTpms_LATEST
 
 DEL SwcApplDem
-MKLINK /D SwcApplDem        ..\..\..\..\repo_submodules\SwcApplDem\pRealEcu_LATEST
+MKLINK /D SwcApplDem        ..\..\..\..\repo_submodules\SwcApplDem\EcuReal_vBcRsBpTpms_LATEST
 
 DEL SwcApplEcuM
-MKLINK /D SwcApplEcuM       ..\..\..\..\repo_submodules\SwcApplEcuM\pRealEcu_LATEST
+MKLINK /D SwcApplEcuM       ..\..\..\..\repo_submodules\SwcApplEcuM\EcuReal_vBcRsBpTpms_LATEST
 
 DEL SwcApplNvM
-MKLINK /D SwcApplNvM        ..\..\..\..\repo_submodules\SwcApplNvM\pRealEcu_LATEST
+MKLINK /D SwcApplNvM        ..\..\..\..\repo_submodules\SwcApplNvM\EcuReal_vBcRsBpTpms_LATEST
 
 DEL SwcApplTpms
-MKLINK /D SwcApplTpms       ..\..\..\..\repo_submodules\SwcApplTpms\pRealEcu_LATEST
+MKLINK /D SwcApplTpms       ..\..\..\..\repo_submodules\SwcApplTpms\EcuReal_vBcRsBpTpms_LATEST
 
 DEL SwcServiceBswM
-MKLINK /D SwcServiceBswM    ..\..\..\..\repo_submodules\SwcServiceBswM\pRealEcu_LATEST
-
-DEL SwcServiceCanSm
-MKLINK /D SwcServiceCanSm   ..\..\..\..\repo_submodules\SwcServiceCanSm\pRealEcu_LATEST
-
-DEL SwcServiceCanTp
-MKLINK /D SwcServiceCanTp   ..\..\..\..\repo_submodules\SwcServiceCanTp\pRealEcu_LATEST
+MKLINK /D SwcServiceBswM    ..\..\..\..\repo_submodules\SwcServiceBswM\EcuReal_vBcRsBpTpms_LATEST
 
 DEL SwcServiceCom
-MKLINK /D SwcServiceCom     ..\..\..\..\repo_submodules\SwcServiceCom\pRealEcu_LATEST
+MKLINK /D SwcServiceCom     ..\..\..\..\repo_submodules\SwcServiceCom\EcuReal_vBcRsBpTpms_LATEST
 
 DEL SwcServiceComM
-MKLINK /D SwcServiceComM    ..\..\..\..\repo_submodules\SwcServiceComM\pRealEcu_LATEST
+MKLINK /D SwcServiceComM    ..\..\..\..\repo_submodules\SwcServiceComM\EcuReal_vBcRsBpTpms_LATEST
 
 DEL SwcServiceDcm
-MKLINK /D SwcServiceDcm     ..\..\..\..\repo_submodules\SwcServiceDcm\pRealEcu_LATEST
+MKLINK /D SwcServiceDcm     ..\..\..\..\repo_submodules\SwcServiceDcm\EcuReal_vBcRsBpTpms_LATEST
 
 DEL SwcServiceDem
-MKLINK /D SwcServiceDem     ..\..\..\..\repo_submodules\SwcServiceDem\pRealEcu_LATEST
+MKLINK /D SwcServiceDem     ..\..\..\..\repo_submodules\SwcServiceDem\EcuReal_vBcRsBpTpms_LATEST
 
 DEL SwcServiceDet
-MKLINK /D SwcServiceDet     ..\..\..\..\repo_submodules\SwcServiceDet\pRealEcu_LATEST
+MKLINK /D SwcServiceDet     ..\..\..\..\repo_submodules\SwcServiceDet\EcuReal_vBcRsBpTpms_LATEST
 
 DEL SwcServiceEcuM
-MKLINK /D SwcServiceEcuM    ..\..\..\..\repo_submodules\SwcServiceEcuM\pRealEcu_LATEST
+MKLINK /D SwcServiceEcuM    ..\..\..\..\repo_submodules\SwcServiceEcuM\EcuReal_vBcRsBpTpms_LATEST
 
 DEL SwcServiceFiM
-MKLINK /D SwcServiceFiM     ..\..\..\..\repo_submodules\SwcServiceFiM\pRealEcu_LATEST
+MKLINK /D SwcServiceFiM     ..\..\..\..\repo_submodules\SwcServiceFiM\EcuReal_vBcRsBpTpms_LATEST
 
 DEL SwcServiceNvM
-MKLINK /D SwcServiceNvM     ..\..\..\..\repo_submodules\SwcServiceNvM\pRealEcu_LATEST
+MKLINK /D SwcServiceNvM     ..\..\..\..\repo_submodules\SwcServiceNvM\EcuReal_vBcRsBpTpms_LATEST
 
 DEL SwcServiceOs
-MKLINK /D SwcServiceOs      ..\..\..\..\repo_submodules\SwcServiceOs\pRealEcu_LATEST
+MKLINK /D SwcServiceOs      ..\..\..\..\repo_submodules\SwcServiceOs\EcuReal_vBcRsBpTpms_LATEST
 
 DEL SwcServicePduR
-MKLINK /D SwcServicePduR    ..\..\..\..\repo_submodules\SwcServicePduR\pRealEcu_LATEST
+MKLINK /D SwcServicePduR    ..\..\..\..\repo_submodules\SwcServicePduR\EcuReal_vBcRsBpTpms_LATEST
 
 DEL SwcServiceSchM
-MKLINK /D SwcServiceSchM    ..\..\..\..\repo_submodules\SwcServiceSchM\pRealEcu_LATEST
+MKLINK /D SwcServiceSchM    ..\..\..\..\repo_submodules\SwcServiceSchM\EcuReal_vBcRsBpTpms_LATEST
+
+DEL SwcServiceSmCan
+MKLINK /D SwcServiceSmCan   ..\..\..\..\repo_submodules\SwcServiceSmCan\EcuReal_vBcRsBpTpms_LATEST
 
 DEL SwcServiceStartUp
-MKLINK /D SwcServiceStartUp ..\..\..\..\repo_submodules\SwcServiceStartUp\pRealEcu_LATEST
+MKLINK /D SwcServiceStartUp ..\..\..\..\repo_submodules\SwcServiceStartUp\EcuReal_vBcRsBpTpms_LATEST
+
+DEL SwcServiceTpCan
+MKLINK /D SwcServiceTpCan   ..\..\..\..\repo_submodules\SwcServiceTpCan\EcuReal_vBcRsBpTpms_LATEST
 
 DEL wrappers
-MKLINK /D wrappers          ..\..\..\pRealEcu\cR_LATEST\source\wrappers
+MKLINK /D wrappers          ..\..\..\ProjectWindows_EcuReal_vBcRsBpTpms\main_LATEST\source\wrappers
