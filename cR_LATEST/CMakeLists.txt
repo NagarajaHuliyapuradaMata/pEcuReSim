@@ -28,6 +28,8 @@ add_executable(
    ${PROJECT_SOURCE_DIR}/source/ProjectCfg/CfgMcalAdc.c
    ${PROJECT_SOURCE_DIR}/source/ProjectCfg/CfgMcalDio.c
    ${PROJECT_SOURCE_DIR}/source/ProjectCfg/CfgSwcServiceDcm_DslDsd.c
+   ${PROJECT_SOURCE_DIR}/source/ProjectCfg/SwcApplDcm.c
+   ${PROJECT_SOURCE_DIR}/source/ProjectCfg/SwcApplDcm_MsgAuthentication.c
 #   CanIf_PBcfg.c
 #   CanTp_Cfg.c
 #   CanSM_PBcfg.c
@@ -50,12 +52,29 @@ add_executable(
 #   NvM_Cfg.c
 #   PduR_PBcfg.c
 
+   ${PROJECT_SOURCE_DIR}/source/SwcApplEcuM/SwcApplEcuM.c
+   ${PROJECT_SOURCE_DIR}/source/SwcApplTpms/SwcApplTpms_DTC.c
+#   SwcApplTpms_NvM.c
+#   SwcApplTpms_NvM_Cat01_If.c
+#   SwcApplTpms_NvM_Cat02_If.c
+#   SwcApplTpms_NvM_Cat03_If.c
+#   SwcApplTpms_NvM_Cat04_If.c
+#   SwcApplTpms_NvM_Cat05_If.c
+#   SwcApplTpms_NvM_Cat06_If.c
+#   SwcApplTpms_NvM_Cat10_If.c
+#   SwcApplTpms_Nvm_If.c
+#   SwcApplTpms_abs_lin.c
+#   SwcApplTpms_FPA.c
+#   SwcApplTpms_Rte.c
+#   SwcApplTpms_Version.c
+
+   ${PROJECT_SOURCE_DIR}/source/LibAutosar/LibAutosar_Crc.c
+
    ${PROJECT_SOURCE_DIR}/source/McalAdc/McalAdc.c
    ${PROJECT_SOURCE_DIR}/source/McalDio/McalDio.c
    ${PROJECT_SOURCE_DIR}/source/McalGpt/McalGpt.c
    ${PROJECT_SOURCE_DIR}/source/McalMcu/McalMcu.c
    ${PROJECT_SOURCE_DIR}/source/McalWdg/McalWdg.c
-
 #  ${PROJECT_SOURCE_DIR}/source/McalAdc/adc.c
 
 #   applvect.c
@@ -360,7 +379,6 @@ add_executable(
 #   Fls_Version.c
 #   gpio.c
 #   hmac_sha2.c
-#   LibAutosar_Crc.c
 #   Mcu.c
 #   MemConversion.c
 #   MemIf.c
@@ -405,23 +423,6 @@ add_executable(
 #   SchM.c
 #   sha2.c
 #   SignalCallbacks.c
-#   SwcApplDcm.c
-#   SwcApplDcm_MsgAuthentication.c
-#   SwcApplEcuM.c
-#   SwcApplTpms_DTC.c
-#   SwcApplTpms_NvM.c
-#   SwcApplTpms_NvM_Cat01_If.c
-#   SwcApplTpms_NvM_Cat02_If.c
-#   SwcApplTpms_NvM_Cat03_If.c
-#   SwcApplTpms_NvM_Cat04_If.c
-#   SwcApplTpms_NvM_Cat05_If.c
-#   SwcApplTpms_NvM_Cat06_If.c
-#   SwcApplTpms_NvM_Cat10_If.c
-#   SwcApplTpms_Nvm_If.c
-#   SwcApplTpms_abs_lin.c
-#   SwcApplTpms_FPA.c
-#   SwcApplTpms_Rte.c
-#   SwcApplTpms_Version.c
 #   Break.c
 #   busmsg.c
 #   calibr.c
@@ -490,8 +491,6 @@ target_include_directories(
    "${PROJECT_SOURCE_DIR}/source/SwcApplNvM"
    "${PROJECT_SOURCE_DIR}/source/SwcApplTpms"
    "${PROJECT_SOURCE_DIR}/source/SwcServiceBswM"
-   "${PROJECT_SOURCE_DIR}/source/SwcServiceCanSm"
-   "${PROJECT_SOURCE_DIR}/source/SwcServiceCanTp"
    "${PROJECT_SOURCE_DIR}/source/SwcServiceCom"
    "${PROJECT_SOURCE_DIR}/source/SwcServiceComM"
    "${PROJECT_SOURCE_DIR}/source/SwcServiceDcm"
@@ -503,11 +502,13 @@ target_include_directories(
    "${PROJECT_SOURCE_DIR}/source/SwcServiceOs"
    "${PROJECT_SOURCE_DIR}/source/SwcServicePduR"
    "${PROJECT_SOURCE_DIR}/source/SwcServiceSchM"
+   "${PROJECT_SOURCE_DIR}/source/SwcServiceSmCan"
    "${PROJECT_SOURCE_DIR}/source/SwcServiceStartUp"
-   "${PROJECT_SOURCE_DIR}/source/EcuabCanIf"
-   "${PROJECT_SOURCE_DIR}/source/EcuabCanTrcv"
+   "${PROJECT_SOURCE_DIR}/source/SwcServiceTpCan"
    "${PROJECT_SOURCE_DIR}/source/EcuabFee"
-   "${PROJECT_SOURCE_DIR}/source/EcuabMemIf"
+   "${PROJECT_SOURCE_DIR}/source/EcuabIfCan"
+   "${PROJECT_SOURCE_DIR}/source/EcuabIfMem"
+   "${PROJECT_SOURCE_DIR}/source/EcuabTrcvCan"
    "${PROJECT_SOURCE_DIR}/source/LibAutosar"
    "${PROJECT_SOURCE_DIR}/source/McalAdc"
    "${PROJECT_SOURCE_DIR}/source/McalCan"
