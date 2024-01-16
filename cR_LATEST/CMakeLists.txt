@@ -25,11 +25,15 @@ add_definitions(
 add_executable(
    ${PROJECT_NAME}
 
+   ${PROJECT_SOURCE_DIR}/source/ProjectCfg/SwcApplDcm.c
+   ${PROJECT_SOURCE_DIR}/source/ProjectCfg/SwcApplDcm_MsgAuthentication.c
+   ${PROJECT_SOURCE_DIR}/source/ProjectCfg/SwcApplTpms_abs_lin.c
+   ${PROJECT_SOURCE_DIR}/source/ProjectCfg/SwcApplTpms_FPA.c
+   ${PROJECT_SOURCE_DIR}/source/ProjectCfg/SwcApplTpms_NvM.c
+   ${PROJECT_SOURCE_DIR}/source/ProjectCfg/SwcApplTpms_Rte.c
    ${PROJECT_SOURCE_DIR}/source/ProjectCfg/CfgMcalAdc.c
    ${PROJECT_SOURCE_DIR}/source/ProjectCfg/CfgMcalDio.c
    ${PROJECT_SOURCE_DIR}/source/ProjectCfg/CfgSwcServiceDcm_DslDsd.c
-   ${PROJECT_SOURCE_DIR}/source/ProjectCfg/SwcApplDcm.c
-   ${PROJECT_SOURCE_DIR}/source/ProjectCfg/SwcApplDcm_MsgAuthentication.c
 #   CanIf_PBcfg.c
 #   CanTp_Cfg.c
 #   CanSM_PBcfg.c
@@ -54,18 +58,14 @@ add_executable(
 
    ${PROJECT_SOURCE_DIR}/source/SwcApplEcuM/SwcApplEcuM.c
    ${PROJECT_SOURCE_DIR}/source/SwcApplTpms/SwcApplTpms_DTC.c
-#   SwcApplTpms_NvM.c
-#   SwcApplTpms_NvM_Cat01_If.c
-#   SwcApplTpms_NvM_Cat02_If.c
-#   SwcApplTpms_NvM_Cat03_If.c
-#   SwcApplTpms_NvM_Cat04_If.c
-#   SwcApplTpms_NvM_Cat05_If.c
-#   SwcApplTpms_NvM_Cat06_If.c
-#   SwcApplTpms_NvM_Cat10_If.c
-#   SwcApplTpms_Nvm_If.c
-#   SwcApplTpms_abs_lin.c
-#   SwcApplTpms_FPA.c
-#   SwcApplTpms_Rte.c
+   ${PROJECT_SOURCE_DIR}/source/SwcApplTpms/SwcApplTpms_NvM_Cat01_If.c
+   ${PROJECT_SOURCE_DIR}/source/SwcApplTpms/SwcApplTpms_NvM_Cat02_If.c
+   ${PROJECT_SOURCE_DIR}/source/SwcApplTpms/SwcApplTpms_NvM_Cat03_If.c
+   ${PROJECT_SOURCE_DIR}/source/SwcApplTpms/SwcApplTpms_NvM_Cat04_If.c
+   ${PROJECT_SOURCE_DIR}/source/SwcApplTpms/SwcApplTpms_NvM_Cat05_If.c
+   ${PROJECT_SOURCE_DIR}/source/SwcApplTpms/SwcApplTpms_NvM_Cat06_If.c
+   ${PROJECT_SOURCE_DIR}/source/SwcApplTpms/SwcApplTpms_NvM_Cat10_If.c
+   ${PROJECT_SOURCE_DIR}/source/SwcApplTpms/SwcApplTpms_Nvm_If.c
 #   SwcApplTpms_Version.c
 
    ${PROJECT_SOURCE_DIR}/source/LibAutosar/LibAutosar_Crc.c
