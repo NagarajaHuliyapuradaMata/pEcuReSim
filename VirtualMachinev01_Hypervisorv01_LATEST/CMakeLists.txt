@@ -18,7 +18,7 @@ add_definitions(
    -Wuninitialized
    -D NOT_READY_FOR_TESTING_OR_DEPLOYMENT
    -D IBTCM_SW_ANPASSUNGEN
-   -D BUILD_RIVIAN
+   -D BUILD_RAJA
    -D CfgProject_dSwitchReSim
 )
 
